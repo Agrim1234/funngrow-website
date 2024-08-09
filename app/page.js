@@ -17,24 +17,28 @@ export default function Home() {
     const headText = "Work on real Projects and earn money."
     const DataReason = [
         {
+            id: 1,
             imageUrl: '/income.svg',
             title: 'First Income',
             description: 'Work with real companies and Earn money',
             link: '#'
         },
         {
+            id: 2,
             imageUrl: '/passion.svg',
             title: 'Passion',
             description: 'Make your passion as your profession',
             link: '#'
         },
         {
+            id: 3,
             imageUrl: '/learning.svg',
             title: 'Learning',
             description: 'Experiential Learning by working on real projects',
             link: '#'
         },
         {
+            id: 4,
             imageUrl: '/income.svg',
             title: 'Certificates',
             description: 'Build your profile by getting experience certificates',
@@ -71,31 +75,37 @@ export default function Home() {
 
     const DataProjectCategory = [
         {
+            id: 1,
             imageUrl: '/SocialMediaMarketing.svg',
             heading: 'Social Media Marketing',
             description: 'Manage social media pages of companies'
         },
         {
+            id: 2,
             imageUrl: '/VideoCreation.svg',
             heading: 'Video Creation',
             description: 'Create and edit videos for companies and use your video creation skills'
         },
         {
+            id: 3,
             imageUrl: '/WebsiteDesign.svg',
             heading: 'Website Design',
             description: 'Design and build a website for companies'
         },
         {
+            id: 4,
             imageUrl: '/InfluencerMarketing.svg',
             heading: 'Influencer Marketing',
             description: 'Create Reels, Memes, posts and videos for social media handles of companies'
         },
         {
+            id: 5,
             imageUrl: '/MobileAppDevelopment.svg',
             heading: 'Mobile App Development',
             description: 'Develop market ready apps for companies'
         },
         {
+            id: 6,
             imageUrl: '/CampusAmbassador.svg',
             heading: 'Campus Ambassador',
             description: 'Drive sales for companies by acquiring customers'
@@ -356,7 +366,7 @@ export default function Home() {
 
                     {
                         DataProjectCategory.map(item => {
-                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`}>
+                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`} key={item.id}>
 
                                 <div className={`flip-card-inner relative w-full h-full transform-style-3d backface-hidden transition-all duration-[0.6s] hover:transform hover:rotate-y-180 rounded-sm`}>
 
@@ -381,7 +391,7 @@ export default function Home() {
 
                     {
                         DataProjectCategorySecond.map(item => {
-                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`}>
+                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`} key={item.id}>
 
                                 <div className={`flip-card-inner relative w-full h-full transform-style-3d backface-hidden transition-all duration-[0.6s] hover:transform hover:rotate-y-180`}>
 
@@ -424,7 +434,7 @@ export default function Home() {
                                     width={165} height={40} />
                             </div>
                             <svg className="absolute bottom-0 -right-56 bg-transparent z-0 text-[#40424c]" viewBox="0 0 439 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
                             </svg>
                         </div>
                     }
@@ -668,12 +678,12 @@ export default function Home() {
                 <div className="process-wrapper-earning-steps flex mt-10 relative px-5 mx-3">
                     <div className="absolute top-[49px] z-0 left-48">
                         <svg width="100%" height="2" viewBox="0 0 937 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.5 1H936.5" stroke="#07AB67" stroke-width="2" stroke-dasharray="7 7"></path>
+                            <path d="M0.5 1H936.5" stroke="#07AB67" strokeWidth="2" strokeDasharray="7 7"></path>
                         </svg>
                     </div>
                     <div className="process-line mobile m-4 hidden absolute">
                         <svg width="2" height="100%" viewBox="0 0 2 3000" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 3000L1 1.14441e-05" stroke="#07AB67" stroke-width="2" stroke-dasharray="7 7"></path>
+                            <path d="M1 3000L1 1.14441e-05" stroke="#07AB67" strokeWidth="2" strokeDasharray="7 7"></path>
                         </svg>
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10">

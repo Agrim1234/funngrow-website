@@ -32,12 +32,7 @@ const Navbar = () => {
             {showCollapsibleSidebar && <div className="md:hidden absolute right-0 mt-12 z-100 bg-dark-black z-100" id="mobile-menu">
                 <div className="space-y-1 px-2 pb-3 pt-2 bg-dark-black w-screen z-100">
                     <Link href="/" className="block rounded-md px-5 py-2 text-white z-100 font-medium  hover:bg-gray-700 hover:text-white">
-                        {/* <button onClick={() => setShowDropdown(!showDropdown)} className='inline-flex flex-row items-center text-black'> */}
                         <span>Teen</span>
-                        {/* <svg className="w-2.5 h-2.5 ms-3 flex justify-center items-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
-                            </svg> */}
-                        {/* </button> */}
                     </Link>
                     <Link href="/company" className="block rounded-md px-5 py-2 text-white font-medium z-100 hover:bg-gray-700 hover:text-white">
                         Company
@@ -64,7 +59,7 @@ const Navbar = () => {
 
             {<ul className='flex flex-row z-100 text-white gap-6 m-4 px-2 md:justify-between justify-around items-center hidden w-full md:inline-flex md:w-auto'>
                 <li className='hover:font-bold transition-all duration-100 mx-3 z-100'>
-                    <Link className='inline-flex items-center z-100' href={'/'}>
+                    <Link className='inline-flex items-center z-100' href='/'>
                         Teen
                         {/* <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -103,19 +98,6 @@ const Navbar = () => {
                 </li>
             </ul>}
 
-            {/* <div id="dropdown" className={`z-10 ${showDropdown ? "" : "hidden"} bg-white divide-y divide-gray-100 absolute rounded-lg shadow w-44 dark:bg-gray-700 mt-11 xl:right-[16%] lg:right-[16%]  md:right-[24%] right-[20%]`}>
-                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                    <li>
-                        <a href='https://codingservices.in/sandbox' className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sandbox</a>
-                    </li>
-                    <li>
-                        <a href="https://todo-qudaes5wn-agrim-agarwals-projects.vercel.app/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Todo App</a>
-                    </li>
-                    <li>
-                        <a href="https://spotifyclonemadebyme.freewebhostmost.com/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Spotify Clone</a>
-                    </li>
-                </ul>
-            </div> */}
         </div>
     )
 }
