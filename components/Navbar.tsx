@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
     const [showCollapsibleSidebar, setShowCollapsibleSidebar] = useState(false)
@@ -21,11 +22,11 @@ const Navbar = () => {
         <div className='bg-[#121e2c] flex flex-row justify-between px-2 w-screen fixed top-0 left-0 z-100'>
             <h3 className='m-4 z-100'>
                 <Link href={'/'}>
-                    <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80735fd2fd0810a24fba_funngro-logo.svg" loading="lazy" alt="" className="w-[175px] h-[48px]" />
+                    <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80735fd2fd0810a24fba_funngro-logo.svg" loading="lazy" alt="" width={175} height={48} />
                 </Link>
             </h3>
             <button className='md:hidden hamburgerBtn transition-all z-100' onClick={hamburgerClick} >
-                <img src={hamburgerImg} className='hamburgerImg invert h-[24px] w-[24px] z-100' />
+                <Image src={hamburgerImg} className='hamburgerImg invert z-100' height={24} width={24} alt='hamburger icon'/>
             </button>
 
             {showCollapsibleSidebar && <div className="md:hidden absolute right-0 mt-12 z-100 bg-dark-black z-100" id="mobile-menu">
@@ -46,16 +47,16 @@ const Navbar = () => {
                     </a>
                     <div className='flex gap-4 py-2 px-5 z-100'>
                     <a href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro" className="navbar1_link icon z-100 w-inline-block">
-                        <img src='/androidIcon.svg' className='invert z-100' height={24} width={24} />
+                        <Image src='/androidIcon.svg' className='invert z-100' height={24} width={24} alt='android icon'/>
                     </a>
                     <a href="https://apps.apple.com/in/app/funngro/id1579361075" className="navbar1_link icon w-inline-block z-100">
-                        <img src='/apple.svg' className='invert z-100' height={24} width={24} />
+                        <Image src='/apple.svg' className='invert z-100' height={24} width={24} alt='app store apple'/>
                     </a>
                     </div>
                     <div className="bg-[#47c480] w-52 h-12 inline-flex justify-center items-center rounded-2xl mx-5 py-2 z-100">
                         <a href="https://teenlancer.funngro.com/pages/login/" target="_blank" className="inline-flex z-100 gap-3 bg-[#47c480] justify-center items-center">
                             <div className='text-white z-100'>Company Login</div>
-                            <img src='/rightarrow.svg' className='invert z-100' height={24} width={24} />
+                            <Image src='/rightarrow.svg' className='invert z-100' height={24} width={24} alt='right arrow' />
                         </a>
                     </div>
                 </div>
@@ -82,13 +83,13 @@ const Navbar = () => {
                 </li>
                 <li className='hover:font-bold transition-all duration-100 mx-3 z-100'>
                     <a href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro" className="z-100 navbar1_link icon w-inline-block">
-                        <img src='/androidIcon.svg' className='invert z-100' height={24} width={24} />
+                        <Image src='/androidIcon.svg' className='invert z-100' height={24} width={24} alt='andorid icon'/>
                     </a>
                 </li>
                 <li>
                     <a href="https://apps.apple.com/in/app/funngro/id1579361075" className="navbar1_link z-100 icon w-inline-block">
                         <div className="nav-cta-icon w-embed z-100">
-                            <img src='/apple.svg' className='invert z-100' height={24} width={24} />
+                            <Image src='/apple.svg' className='invert z-100' height={24} width={24} alt='app store icon'/>
                         </div>
                     </a>
                 </li>
@@ -96,7 +97,7 @@ const Navbar = () => {
                     <div className="bg-[#47c480] z-100 w-52 h-12 inline-flex justify-center items-center rounded-2xl">
                         <a href="https://teenlancer.funngro.com/pages/login/" target="_blank" className="inline-flex gap-3 bg-[#47c480] z-100 justify-center items-center">
                             <div className='z-100'>Company Login</div>
-                            <img src='/rightarrow.svg' className='invert z-100' height={24} width={24} />
+                            <Image src='/rightarrow.svg' className='invert z-100' height={24} width={24} alt='right arrow'/>
                         </a>
                     </div>
                 </li>

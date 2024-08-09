@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import Image from 'next/image'
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect'
 import CardInfo from '@/components/CardInfo'
 import CardMemberReview from '@/components/CardMemberReview'
@@ -194,10 +195,10 @@ const page = () => {
 
                         <div className="flex gap-3">
                             <a href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro" className="download-app-cta w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80744c238bae49b47ff4_image%2027.png" loading="lazy" alt="Get it on Google Play Banner" className="image-full-width" width={132} height={49} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80744c238bae49b47ff4_image%2027.png" loading="lazy" alt="Get it on Google Play Banner" className="image-full-width" width={132} height={49} />
                             </a>
                             <a href="https://apps.apple.com/in/app/funngro/id1579361075" className="download-app-cta w-inline-block">
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" loading="lazy" alt="Download on the App Store Banner" className="image-full-width" width={132} height={49} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" loading="lazy" alt="Download on the App Store Banner" className="image-full-width" width={132} height={49} />
                             </a>
 
                         </div>
@@ -207,7 +208,7 @@ const page = () => {
                     <div className="bg-[#47c480] w-full h-12 inline-flex justify-center items-center rounded-2xl py-2 z-100">
                         <a href="https://teenlancer.funngro.com/pages/login/" target="_blank" className="inline-flex z-100 gap-3 bg-[#47c480] justify-center items-center">
                             <div className='text-white z-100'>Hire Teenlancer</div>
-                            <img src='/rightarrow.svg' className='invert z-100' height={24} width={24} />
+                            <Image src='/rightarrow.svg' className='invert z-100' height={24} width={24} alt='right arrow'/>
                         </a>
                     </div>
 
@@ -230,7 +231,7 @@ const page = () => {
                 </div>
 
                 <div className="header-container-right-wrapper flex items-center justify-center">
-                    <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 44vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png 586w" alt="Funngro App" className="flex items-center justify-center w-[386px] h-[382px] sm:w-[512px] sm:h-[507px] max-w-[512px] max-h-[507px]" />
+                    <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 44vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png 586w" alt="Funngro App" className="flex items-center justify-center w-[386px] h-[382px] sm:w-[512px] sm:h-[507px] max-w-[512px] max-h-[507px]" />
 
                 </div>
 
@@ -272,10 +273,10 @@ const page = () => {
 
 
                         <div className="left-arrow w-slider-arrow-left absolute top-[340px] left-[45%]" role="button" tabindex="0" onClick={() => showSlidesTranslatePrev(memberReviewCardNumber, setMemberReviewCardNumber, 'Member-review-card')}>
-                            <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" loading="lazy" alt="Arrow Left" className="custom-arrow-icon" />
+                            <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" loading="lazy" alt="Arrow Left" width={40} height={16} className="custom-arrow-icon" />
                         </div>
                         <div className="right-arrow w-slider-arrow-right absolute top-[348px] left-[50%]" role="button" tabindex="0" onClick={() => showSlidesTranslateNext(memberReviewCardNumber, setMemberReviewCardNumber, 'Member-review-card')}>
-                            <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" loading="lazy" alt="Arrow Right" className="custom-arrow-icon" />
+                            <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" width={40} height={16} loading="lazy" alt="Arrow Right" className="custom-arrow-icon" />
                         </div>
                         <div className="hide w-slider-nav">
                             <div className="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 4" aria-pressed="true" role="button" tabindex="0">
@@ -350,11 +351,11 @@ const page = () => {
                             <div className="bg-[#40424c] w-full flex justify-center h-[65px] p-5"><h3 className="text-white text-2xl">Companies</h3>
                             </div>
                             <div className="partner-logo-list flex flex-col justify-start gap-3 mt-3 z-10">
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 165.3125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-1600.png 1600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo.png 2116w" alt="" className="partner-logo" width={165} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo.png" loading="lazy" sizes="106.09375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo.png 1358w" alt="" className="partner-logo" width={165} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c231131a1e105d55f450_Mobigic%20logo.png" loading="lazy" alt="" className="partner-logo" width={165} height={30} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo.png" loading="lazy" sizes="107.8125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo.png 1380w" alt="" className="partner-logo" width={165} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e236fced422c7e558_StockPe%20Logo.png" loading="lazy" alt="" className="partner-logo"
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 165.3125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo-p-1600.png 1600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e2e5824e05e043b_CarDekho%20logo.png 2116w" alt="Company name" className="partner-logo" width={165} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo.png" loading="lazy" sizes="106.09375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fc56174a8505b2556_Enerzy%20Solar%20logo.png 1358w" alt="Company name" className="partner-logo" width={165} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c231131a1e105d55f450_Mobigic%20logo.png" loading="lazy" alt="Company name" className="partner-logo" width={165} height={30} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo.png" loading="lazy" sizes="107.8125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909f302d2432498d0a93_Tarakki%20logo.png 1380w" alt="Company name" className="partner-logo" width={165} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e236fced422c7e558_StockPe%20Logo.png" loading="lazy" alt="Company name" className="partner-logo"
                                     width={165} height={40} />
                             </div>
                             <svg className="absolute bottom-0 -right-56 bg-transparent z-0 text-[#40424c]" viewBox="0 0 439 85" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -371,11 +372,11 @@ const page = () => {
 
                             </div>
                             <div className="partner-logo-list flex flex-col justify-start gap-4 mt-4 z-10">
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group.png" loading="lazy" alt="" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group.png 2882w" sizes="123px" className="partner" height={40} width={180} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 148.4375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo.png 1900w" alt="" className="partner-logo" height={40} width={180} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo.png" loading="lazy" sizes="116.40625px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo.png 1490w" alt="" className="partner-logo" height={40} width={180} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo.png" loading="lazy" sizes="127.109375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo.png 1627w" alt="" className="partner-logo" height={40} width={180} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 179.53125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo.png 2298w" alt="" className="partner-logo" height={40} width={180} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group.png" loading="lazy" alt="Partner name" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/64ae396c0046a0f0dbbc6f08_Mask%20group.png 2882w" sizes="123px" className="partner" height={40} width={180} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 148.4375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1974420c03b964d4513_AIC%20Pinnacle%20logo.png 1900w" alt="Partner name" className="partner-logo" height={40} width={180} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo.png" loading="lazy" sizes="116.40625px" srcSeimaget="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1985da398a524766945_Qapita%20logo.png 1490w" alt="Partner name" className="partner-logo" height={40} width={180} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo.png" loading="lazy" sizes="127.109375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c197453e183c74317857_Headstart%20logo.png 1627w" alt="Partner name" className="partner-logo" height={40} width={180} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 179.53125px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c1984af86db14b5e888c_AIC%20logo.png 2298w" alt="Partner name" className="partner-logo" height={40} width={180} />
                             </div>
                             <svg className="absolute bottom-0 -right-56 bg-transparent z-0 text-[#40424c]" viewBox="0 0 439 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
@@ -390,11 +391,11 @@ const page = () => {
                                 <h3 className="text-white text-2xl">Companies</h3>
                             </div>
                             <div className="partner-logo-list flex flex-col gap-3 mt-4 z-10">
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 200px" alt="" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-1600.png 1600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-2000.png 2000w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-2600.png 2600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-3200.png 3200w" className="partner-logo" width={200} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo.png" loading="lazy" sizes="123.984375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo.png 1587w" alt="" className="partner-logo" width={200} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo.png" loading="lazy" sizes="40px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo.png 512w" alt="" className="partner-logo" width={200} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e05723157cb10f6_Eco%20365%20Logo.png" loading="lazy" alt="" className="partner-logo" width={200} height={40} />
-                                <img src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 200px" alt="" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-1080.png 1080w" className="partner-logo" width={200} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 200px" alt="Company name" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-1600.png 1600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-2000.png 2000w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-2600.png 2600w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909fd142ea4d0d188166_LegacyNext%20logo-p-3200.png 3200w" className="partner-logo" width={200} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo.png" loading="lazy" sizes="123.984375px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e4eeebe97628bde62_Two%2099%20Logo.png 1587w" alt="Company name" className="partner-logo" width={200} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo.png" loading="lazy" sizes="40px" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0ce0a8ef5285a045_MOnech%20logo.png 512w" alt="Company name" className="partner-logo" width={200} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909e0e05723157cb10f6_Eco%20365%20Logo.png" loading="lazy" alt="Company name" className="partner-logo" width={200} height={40} />
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 200px" alt="Company name" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-800.png 800w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399909ee1a3895ee3da471b_Grow%20Partner%20logo-p-1080.png 1080w" className="partner-logo" width={200} height={40} />
                             </div>
                             <svg className="absolute bottom-0 -right-56 bg-transparent z-0 text-[#40424c]" viewBox="0 0 439 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
@@ -437,7 +438,7 @@ const page = () => {
                         <div className="bg-[#47c480] w-52 h-12 inline-flex justify-center items-center rounded-2xl mx-5 py-2">
                             <a href="https://teenlancer.funngro.com/login/?returnUrl=%2Fpages%2Fregister%2F" target="_blank" className="inline-flex gap-3 bg-[#47c480] justify-center items-center">
                                 <div className='text-white'>Company Login</div>
-                                <img src='/rightarrow.svg' className='invert' height={24} width={24} />
+                                <Image src='/rightarrow.svg' className='invert' height={24} width={24} alt='right arrow'/>
                             </a>
                         </div>
                         <div className="bg-light-black w-52 h-12 inline-flex justify-center items-center rounded-2xl mx-5 py-2 border-2 border-white">
@@ -452,7 +453,7 @@ const page = () => {
                 <div className="featured-in-header margin-bottom margin-large mt-48">
                     <div className="text-align-center">
                         <div className="margin-bottom margin-small">
-                            <h2 className="text-color-light-blue text-white flex justify-center">We are Featured in</h2>
+                            <h2 className=" text-white flex justify-center">We are Featured in</h2>
                             <p className="text-color-grey text-white p-4">The world is talking about Funngro, check out what everyone is saying</p>
                         </div>
                     </div>
@@ -464,53 +465,53 @@ const page = () => {
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="1 of 7">
                             <a href="https://businessnewsweek.in/business/teens-mean-business-funngro-offers-real-world-work-experience-to-teenagers-through-its-revolutionary-platform/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" aria-hidden="true" width={84} height={84} />
+                                <Image sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778e6c4c837fc2ef89c_Business%20News%20week%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" aria-hidden="true" width={84} height={84} />
                             </a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="2 of 7">
                             <a href="https://www.fmlive.in/teens-mean-business-funngro-offers-real-world-work-experience-to-teenagers-through-its-revolutionary-platform/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img alt="" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a029eed4fdce11c2d34e80_FM%20live%20logo.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
+                                <Image alt="image feature" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a029eed4fdce11c2d34e80_FM%20live%20logo.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
                             </a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="3 of 7">
                             <a href="https://ibsintelligence.com/ibsi-news/funngro-launches-money-management-program-for-teenagers/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" aria-hidden="true" width={84} height={84} />
+                                <Image sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c778a3f4b8074b9bf839_IBS%20Intelligence%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" aria-hidden="true" width={84} height={84} />
                             </a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="4 of 7">
                             <a href="https://timesofindia.indiatimes.com/blogs/voices/importance-of-financial-literacy-for-teens/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img alt="" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a02a16a363596ec9c5eefb_Times%20of%20India%20logo.png" className="featured-in-image" aria-hidden="true" width={84} height={84} /></a>
+                                <Image alt="featured in image" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a02a16a363596ec9c5eefb_Times%20of%20India%20logo.png" className="featured-in-image" aria-hidden="true" width={84} height={84} /></a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="5 of 7" >
                             <a href="https://thedailybrunch.com/2022/07/28/teens-mean-business-funngro-offers-real-world-work-experience-to-teenagers-through-its-revolutionary-platform/" target="_blank" className="w-inline-block">
-                                <img sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" width={84} height={84} />
+                                <Image sizes="(max-width: 479px) 100vw, (max-width: 767px) 15vw, (max-width: 991px) 96px, 8vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo.png 512w" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6399c7787f63ad6273e07ba9_The%20Daily%20Brunch%20new%20logo.png" loading="lazy" alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" className="featured-in-image" width={84} height={84} />
                             </a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="6 of 7">
                             <a href="https://entrackr.com/2022/12/funngro-helps-teens-with-essential-financial-education-valuable-work-experience/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a029286e97ee36926d7bbf_Entracker.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
+                                <Image alt="Teens financial empowerment, Learning with earning, Prepaid card, Freelance, Experience with real companies, project based jobs" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a029286e97ee36926d7bbf_Entracker.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
                             </a>
                         </div>
 
                         <div className="featured-in-slide w-slide transition-all duration-[0.5s]" aria-label="7 of 7">
                             <a href="https://thedailybrunch.com/2022/07/28/teens-mean-business-funngro-offers-real-world-work-experience-to-teenagers-through-its-revolutionary-platform/" target="_blank" className="w-inline-block" tabindex="-1" aria-hidden="true">
-                                <img alt="" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a0293fe9b4746ced4246a3_Mda.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
+                                <Image alt="featured in image" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63a0293fe9b4746ced4246a3_Mda.png" className="featured-in-image" aria-hidden="true" width={84} height={84} />
                             </a>
                         </div>
                     </div>
 
                     <div className="flex justify-center">
                         <div className="left-arrow w-slider-arrow-left absolute left-[45%] top-[110px]" role="button" tabindex="0" onClick={() => showSlidesTranslatePrev(featuredInSlideNumber, setFeaturedInSlideNumber, 'featured-in-slide')}>
-                            <img alt="Arrow Left" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" className="custom-arrow-icon" />
+                            <Image alt="Arrow Left" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" width={40} height={16} className="custom-arrow-icon" />
                         </div>
 
                         <div className="right-arrow w-slider-arrow-right absolute top-[117px] left-[52%]" role="button" tabindex="0" onClick={() => showSlidesTranslateNext(featuredInSlideNumber, setFeaturedInSlideNumber, 'featured-in-slide')}>
-                            <img alt="Arrow Right" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" className="custom-arrow-icon" />
+                            <Image alt="Arrow Right" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" width={40} height={16} className="custom-arrow-icon" />
                         </div>
                     </div>
 
@@ -573,7 +574,7 @@ const page = () => {
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10 min-w-48">
                         <div className="process-icon w-embed">
-                            <img src="/OneCircle.svg" alt="" width={98} height={98} />
+                            <Image src="/OneCircle.svg" alt="earning steps images" width={98} height={98} />
                         </div>
                         <div>
                             <h3 className="text-white flex justify-center">Register</h3>
@@ -581,11 +582,11 @@ const page = () => {
                         </div>
                     </div>
                     <div className="process-arrow w-embed flex flex-col justify-center w-[28px] h-[98px]" >
-                        <img src="/RightArrow.svg" alt="" width={13} height={26} />
+                        <Image src="/RightArrow.svg" alt="earning steps images" width={13} height={26} />
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10">
                         <div className="process-icon w-embed">
-                            <img src="/TwoCircle.svg" alt="" width={98} height={98} />
+                            <Image src="/TwoCircle.svg" alt="earning steps images" width={98} height={98} />
                         </div>
                         <div>
                             <h3 className="text-white flex justify-center">Add Projects</h3>
@@ -593,33 +594,33 @@ const page = () => {
                         </div>
                     </div>
                     <div className="process-arrow w-embed w-[28px] h-[98px] flex flex-col justify-center">
-                        <img src="/RightArrow.svg" alt="" width={13} height={26} />
+                        <Image src="/RightArrow.svg" alt="earning steps images" width={13} height={26} />
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10">
                         <div className="process-icon w-embed">
-                            <img src="/ThreeCircle.svg" alt="" width={98} height={98} />
+                            <Image src="/ThreeCircle.svg" alt="earning steps images" width={98} height={98} />
                         </div>
                         <div><h3 className="text-white flex justify-center">Get Applications</h3>
                             <p className="text-white">Funngro will share curated list of Teenagers interested in your project</p>
                         </div>
                     </div>
                     <div className="process-arrow w-embed w-[28px] h-[98px] flex flex-col justify-center">
-                        <img src="/RightArrow.svg" alt="" width={13} height={26} />
+                        <Image src="/RightArrow.svg" alt="earning steps images" width={13} height={26} />
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10">
                         <div className="process-icon w-embed">
-                            <img src="/FourCircle.svg" alt="" width={98} height={98} />
+                            <Image src="/FourCircle.svg" alt="earning steps images" width={98} height={98} />
                         </div>
                         <div><h3 className="text-white flex justify-center">Select Teens</h3>
                             <p className="text-white">Review profiles, past work, experience and select Teenagers that fits your work</p>
                         </div>
                     </div>
                     <div className="process-arrow w-embed w-[28px] h-[98px] flex flex-col justify-center">
-                        <img src="/RightArrow.svg" alt="" width={13} height={26} />
+                        <Image src="/RightArrow.svg" alt="earning steps images" width={13} height={26} />
                     </div>
                     <div className="div-block flex flex-col items-center gap-3 z-10">
                         <div className="process-icon w-embed">
-                            <img src="/FiveCircle.svg" alt="" width={98} height={98} />
+                            <Image src="/FiveCircle.svg" alt="earning steps images" width={98} height={98} />
                         </div>
                         <div><h3 className="text-white flex justify-center">Project Delivered</h3>
                             <p className="text-white">On Successful completion, release payment to Teenager and post your next project</p>
@@ -647,7 +648,7 @@ const page = () => {
                                 <div className="fs_accordion-1_arrow-wrapper" onClick={(event) => handleAccordionClick(event)}>
 
                                     <div className="faq6_icon w-embed">
-                                        <img src="/Plus.svg" alt="" width={32} height={32} id="accordion-icon-1" className="invert" />
+                                        <Image src="/Plus.svg" alt="plus img" width={32} height={32} id="accordion-icon-1" className="invert" />
                                     </div>
                                 </div>
                             </div>
@@ -666,7 +667,7 @@ const page = () => {
                                 </div>
                                 <div className="fs_accordion-2_arrow-wrapper" onClick={(event) => handleAccordionClick(event)}>
                                     <div className="faq6_icon w-embed">
-                                        <img src="/Plus.svg" alt="" width={32} height={32} id="accordion-icon-2" className="invert" />
+                                        <Image src="/Plus.svg" alt="plus img" width={32} height={32} id="accordion-icon-2" className="invert" />
                                     </div>
                                 </div>
                             </div>
@@ -683,7 +684,7 @@ const page = () => {
                                 </div>
                                 <div className="fs_accordion-3_arrow-wrapper" id="accordion-3" onClick={(event) => handleAccordionClick(event)}>
                                     <div className="faq6_icon w-embed">
-                                        <img src="/Plus.svg" alt="" width={32} height={32} id="accordion-icon-3" className="invert" />
+                                        <Image src="/Plus.svg" alt="plus img" width={32} height={32} id="accordion-icon-3" className="invert" />
                                     </div>
                                 </div>
                             </div>
@@ -705,7 +706,7 @@ const page = () => {
                             <div>View More FAQs
                             </div>
                             <div className="icon-1x1-small w-embed">
-                                <img src="/rightarrow.svg" alt="" width={16} height={17} className="invert" />
+                                <Image src="/rightarrow.svg" alt="right arrow" width={16} height={17} className="invert" />
                             </div>
                         </a>
                     </div>
