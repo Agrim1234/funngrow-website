@@ -843,7 +843,7 @@ export default function Home() {
                         <h1 className="text-5xl text-white">FUNNGRO</h1>
                     </div>
                     <div className="margin-bottom margin-regular">
-                        <h2 className="text-white">The name says it all. "Its <span className="text-dark-green">Fun</span> to <span className="text-dark-green">Grow</span>`&quot;`</h2>
+                        <h2 className="text-white">The name says it all. `&quot;`Its <span className="text-dark-green">Fun</span> to <span className="text-dark-green">Grow</span>`&quot;`</h2>
                     </div>
                     <div>
                         <p className="text-white">Funngro is built by educators, Tech enthusiasts, IIM alumni, Finance experts but most importantly by Loving parents. We are thankful to those mentors who helped us in early stage of our lives and Funngro is our effort to give back to the society. Funngro is a mission to enable Teenagers to become Financially empowered and grow up to be responsible citizens.
