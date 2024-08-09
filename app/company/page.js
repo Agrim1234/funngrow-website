@@ -44,31 +44,37 @@ const Page = () => {
 
     const DataProjectCategory = [
         {
+            id: 1,
             imageUrl: '/SocialMediaMarketing.svg',
             heading: 'Social Media Marketing',
             description: 'Manage social media pages of companies'
         },
         {
+            id: 2,
             imageUrl: '/VideoCreation.svg',
             heading: 'Video Creation',
             description: 'Create and edit videos for companies and use your video creation skills'
         },
         {
+            id: 3,
             imageUrl: '/WebsiteDesign.svg',
             heading: 'Website Design',
             description: 'Design and build a website for companies'
         },
         {
+            id: 4,
             imageUrl: '/InfluencerMarketing.svg',
             heading: 'Influencer Marketing',
             description: 'Create Reels, Memes, posts and videos for social media handles of companies'
         },
         {
+            id: 5,
             imageUrl: '/MobileAppDevelopment.svg',
             heading: 'Mobile App Development',
             description: 'Develop market ready apps for companies'
         },
         {
+            id: 6,
             imageUrl: '/CampusAmbassador.svg',
             heading: 'Campus Ambassador',
             description: 'Drive sales for companies by acquiring customers'
@@ -208,7 +214,7 @@ const Page = () => {
                     <div className="bg-[#47c480] w-full h-12 inline-flex justify-center items-center rounded-2xl py-2 z-100">
                         <a href="https://teenlancer.funngro.com/pages/login/" target="_blank" className="inline-flex z-100 gap-3 bg-[#47c480] justify-center items-center">
                             <div className='text-white z-100'>Hire Teenlancer</div>
-                            <Image src='/rightarrow.svg' className='invert z-100' height={24} width={24} alt='right arrow'/>
+                            <Image src='/rightarrow.svg' className='invert z-100' height={24} width={24} alt='right arrow' />
                         </a>
                     </div>
 
@@ -231,7 +237,7 @@ const Page = () => {
                 </div>
 
                 <div className="header-container-right-wrapper flex items-center justify-center">
-                    <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 44vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png 586w" alt="Funngro App" className="flex items-center justify-center w-[386px] h-[382px] sm:w-[512px] sm:h-[507px] max-w-[512px] max-h-[507px]" width={386} height={382}/>
+                    <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 44vw" srcSet="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro-p-500.png 500w, https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/63fe05934db7ce0d3580d0dd_Funngro.png 586w" alt="Funngro App" className="flex items-center justify-center w-[386px] h-[382px] sm:w-[512px] sm:h-[507px] max-w-[512px] max-h-[507px]" width={386} height={382} />
 
                 </div>
 
@@ -299,7 +305,7 @@ const Page = () => {
 
                     {
                         DataProjectCategory.map(item => {
-                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`}>
+                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`} key={item.id}>
 
                                 <div className={`flip-card-inner relative w-full h-full transform-style-3d backface-hidden transition-all duration-[0.6s] hover:transform hover:rotate-y-180 rounded-sm`}>
 
@@ -324,7 +330,7 @@ const Page = () => {
 
                     {
                         DataProjectCategorySecond.map(item => {
-                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`}>
+                            return <div className={`bg-transparent flip-card h-[234px] w-[224px] perspective-1000 m-2`} key={item.id}>
 
                                 <div className={`flip-card-inner relative w-full h-full transform-style-3d backface-hidden transition-all duration-[0.6s] hover:transform hover:rotate-y-180`}>
 
@@ -346,7 +352,8 @@ const Page = () => {
 
 
                 <div className="trusted-by-section flex justify-around flex-wrap">
-                    <CardContainer children={
+                    <CardContainer >
+
                         <div className="partners-box _1 flex flex-col m-4 border-2 relative border-white w-[395px] h-[578px] justify-start items-center z-10 rounded-lg">
                             <div className="bg-[#40424c] w-full flex justify-center h-[65px] p-5"><h3 className="text-white text-2xl">Companies</h3>
                             </div>
@@ -362,10 +369,12 @@ const Page = () => {
                                 <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
                             </svg>
                         </div>
-                    }
-                    />
 
-                    <CardContainer children={
+                    </CardContainer>
+
+
+                    <CardContainer>
+
                         <div className="partners-box _2 flex flex-col m-4 border-2 border-white w-[395px] h-[578px] justify-start items-center relative z-10 rounded-lg">
                             <div className="partners-heading-wrapper _2 bg-[#40424c] w-full flex justify-center h-[65px] p-5">
                                 <h3 className="text-white text-2xl">Partners</h3>
@@ -382,10 +391,10 @@ const Page = () => {
                                 <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
                             </svg>
                         </div>
-                    }
-                    />
+                    </CardContainer>
 
-                    <CardContainer children={
+
+                    <CardContainer>
                         <div className="partners-box _3 flex flex-col m-4 border-2 border-white w-[395px] h-[578px] justify-start items-center relative">
                             <div className="bg-[#40424c] w-full flex justify-center h-[65px] p-5">
                                 <h3 className="text-white text-2xl">Companies</h3>
@@ -402,8 +411,8 @@ const Page = () => {
                             </svg>
 
                         </div>
-                    }
-                    />
+                    </CardContainer>
+                    
                 </div>
 
                 <div className='flex flex-col why-hire-teenagers-section text-white mt-20 px-5 py-2'>
@@ -438,7 +447,7 @@ const Page = () => {
                         <div className="bg-[#47c480] w-52 h-12 inline-flex justify-center items-center rounded-2xl mx-5 py-2">
                             <a href="https://teenlancer.funngro.com/login/?returnUrl=%2Fpages%2Fregister%2F" target="_blank" className="inline-flex gap-3 bg-[#47c480] justify-center items-center">
                                 <div className='text-white'>Company Login</div>
-                                <Image src='/rightarrow.svg' className='invert' height={24} width={24} alt='right arrow'/>
+                                <Image src='/rightarrow.svg' className='invert' height={24} width={24} alt='right arrow' />
                             </a>
                         </div>
                         <div className="bg-light-black w-52 h-12 inline-flex justify-center items-center rounded-2xl mx-5 py-2 border-2 border-white">

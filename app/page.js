@@ -291,7 +291,7 @@ export default function Home() {
     return (
         <main className="bg-[#121e2c] mb-12 mt-16">
             <Head>
-                <link rel="icon" href="/icon.ico" sizes="any"/>
+                <link rel="icon" href="/icon.ico" sizes="any" />
             </Head>
 
             <div className="header-container flex gap-20 mx-16 mt-36 flex-wrap bg-[#121e2c]">
@@ -315,7 +315,7 @@ export default function Home() {
                                 <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80744c238bae49b47ff4_image%2027.png" loading="lazy" alt="Get it on Google Play Banner" className="image-full-width" width={132} height={49} />
                             </a>
                             <a href="https://apps.apple.com/in/app/funngro/id1579361075" className="download-app-cta w-inline-block">
-                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" loading="lazy" alt="Download on the App Store Banner" className="image-full-width" width={132} height={49}/>
+                                <Image src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80746a8a27189ca05fb9_image%2029.png" loading="lazy" alt="Download on the App Store Banner" className="image-full-width" width={132} height={49} />
                             </a>
 
                         </div>
@@ -421,7 +421,8 @@ export default function Home() {
 
 
                 <div className="flex justify-around flex-wrap">
-                    <CardContainer children={
+                    <CardContainer>
+
                         <div className="partners-box _1 flex flex-col m-4 border-2 relative border-white w-[395px] h-[578px] justify-start items-center z-10 rounded-lg">
                             <div className="bg-[#40424c] w-full flex justify-center h-[65px] p-5"><h3 className="text-white text-2xl">Companies</h3>
                             </div>
@@ -437,10 +438,11 @@ export default function Home() {
                                 <path fillRule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
                             </svg>
                         </div>
-                    }
-                    />
+                    </CardContainer>
 
-                    <CardContainer children={
+
+                    <CardContainer >
+
                         <div className="partners-box _2 flex flex-col m-4 border-2 border-white w-[395px] h-[578px] justify-start items-center relative z-10 rounded-lg">
                             <div className="partners-heading-wrapper _2 bg-[#40424c] w-full flex justify-center h-[65px] p-5">
                                 <h3 className="text-white text-2xl">Partners</h3>
@@ -457,10 +459,11 @@ export default function Home() {
                                 <path fill-rule="evenodd" clipRule="evenodd" d="M6.388 0.564883C5.227 1.05488 3.314 2.67988 2.138 4.17488C0.0079999 6.88188 0 7.11889 0 66.7109C0 107.591 0.344 127.283 1.085 128.911C1.682 130.221 3.439 132.042 4.99 132.958C7.581 134.488 18.284 134.623 137.357 134.623C228.375 134.623 267.614 134.3 269.288 133.538C274.506 131.16 275 128.675 275 104.784C275 92.6669 274.57 81.6219 274.045 80.2399C273.519 78.8579 272.057 77.0529 270.795 76.2279C268.724 74.8739 16.952 1.08988 11 0.0928829C9.625 -0.137117 7.55 0.0748827 6.388 0.564883Z" fill="currentColor"></path>
                             </svg>
                         </div>
-                    }
-                    />
+                    </CardContainer>
 
-                    <CardContainer children={
+
+                    <CardContainer >
+
                         <div className="partners-box _3 flex flex-col m-4 border-2 border-white w-[395px] h-[578px] justify-start items-center relative">
                             <div className="bg-[#40424c] w-full flex justify-center h-[65px] p-5">
                                 <h3 className="text-white text-2xl">Companies</h3>
@@ -477,8 +480,7 @@ export default function Home() {
                             </svg>
 
                         </div>
-                    }
-                    />
+                    </CardContainer>
                 </div>
 
 
@@ -539,11 +541,11 @@ export default function Home() {
 
                     <div className="flex justify-center">
                         <div className="left-arrow absolute left-[45%] top-[110px]" role="button" tabindex="0" onClick={() => showSlidesTranslatePrev(featuredInSlideNumber, setFeaturedInSlideNumber, 'featured-in-slide')}>
-                            <Image alt="Arrow Left" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" width={40} height={16}/>
+                            <Image alt="Arrow Left" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d71afe76c7e7bc767_Vector%2058.svg" width={40} height={16} />
                         </div>
 
                         <div className="right-arrow absolute top-[117px] left-[52%]" role="button" tabindex="0" onClick={() => showSlidesTranslateNext(featuredInSlideNumber, setFeaturedInSlideNumber, 'featured-in-slide')}>
-                            <Image alt="Arrow Right" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" width={40} height={16}/>
+                            <Image alt="Arrow Right" loading="lazy" src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/6390183d1279b312ac061558_Vector%2057.svg" width={40} height={16} />
                         </div>
                     </div>
 
@@ -632,7 +634,7 @@ export default function Home() {
 
                         <div className="gallery-slider-left absolute top-28" role="button" tabIndex="0">
                             <div className="gallery-arrow-wrapper" onClick={() => showSlidesTranslatePrev(gallerySlideNumber, setGallerySlideNumber, 'gallery-slide-wrapper')}>
-                                <Image alt="slider-icons" loading="lazy" src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a0e4912aadb_Chevron%20right-1.svg" className="slider-arrow-icon" width={40} height={40}/>
+                                <Image alt="slider-icons" loading="lazy" src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a0e4912aadb_Chevron%20right-1.svg" className="slider-arrow-icon" width={40} height={40} />
                             </div>
                         </div>
 
@@ -841,7 +843,7 @@ export default function Home() {
                         <h1 className="text-5xl text-white">FUNNGRO</h1>
                     </div>
                     <div className="margin-bottom margin-regular">
-                        <h2 className="text-white">The name says it all. "Its <span className="text-dark-green">Fun</span> to <span className="text-dark-green">Grow</span>”</h2>
+                        <h2 className="text-white">The name says it all. "Its <span className="text-dark-green">Fun</span> to <span className="text-dark-green">Grow</span>`&quot;`</h2>
                     </div>
                     <div>
                         <p className="text-white">Funngro is built by educators, Tech enthusiasts, IIM alumni, Finance experts but most importantly by Loving parents. We are thankful to those mentors who helped us in early stage of our lives and Funngro is our effort to give back to the society. Funngro is a mission to enable Teenagers to become Financially empowered and grow up to be responsible citizens.
@@ -955,26 +957,26 @@ export default function Home() {
                                         </div>
                                         <div className="icon-1x1-small w-embed">
                                             <svg aria-hidden="true" className="h-[17px] w-[16px] text-dark-green" fill="currentColor" role="Image" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
-                                            <title>Arrow Right</title>
-                                            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9">
-                                            </polygon>
+                                                <title>Arrow Right</title>
+                                                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9">
+                                                </polygon>
                                             </svg>
                                         </div>
                                     </div>
                                 </div></a>
                         </div>
                         <div role="listitem" className="w-dyn-item">
-                            <a href="/blog/the-importance-of-early-work-experience-for-teens" className="article-card w-inline-block"><Image alt="The Importance of Early Work Experience for Teens" loading="lazy" src="https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1).png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 67vw, (max-width: 991px) 32vw, 24vw" srcSet="https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-500.png 500w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-800.png 800w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-1080.png 1080w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1).png 1403w" className="article-thumbnail md:w-[281px] md:h-[199px]" width={227} height={160}/>
+                            <a href="/blog/the-importance-of-early-work-experience-for-teens" className="article-card w-inline-block"><Image alt="The Importance of Early Work Experience for Teens" loading="lazy" src="https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1).png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 67vw, (max-width: 991px) 32vw, 24vw" srcSet="https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-500.png 500w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-800.png 800w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1)-p-1080.png 1080w, https://cdn.prod.website-files.com/63902f19aa174ec491ff894d/647dacaa70e4e618fa531286_Untitled%20design%20(1).png 1403w" className="article-thumbnail md:w-[281px] md:h-[199px]" width={227} height={160} />
                                 <div className="article-heading-wrapper bg-light-black w-[281px] rounded-lg text-white p-3"><h2 className="article-heading">The Importance of Early Work Experience for Teens</h2>
                                     <div className="button text-link flex text-dark-green items-center gap-3">
                                         <div>Read More
 
                                         </div>
                                         <div className="icon-1x1-small w-embed">
-                                        <svg aria-hidden="true" className="h-[17px] w-[16px] text-dark-green" fill="currentColor" role="Image" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
-                                            <title>Arrow Right</title>
-                                            <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9">
-                                            </polygon>
+                                            <svg aria-hidden="true" className="h-[17px] w-[16px] text-dark-green" fill="currentColor" role="Image" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Arrow Right</title>
+                                                <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9">
+                                                </polygon>
                                             </svg>
                                         </div>
                                     </div>
@@ -989,11 +991,11 @@ export default function Home() {
 
                                     </div>
                                     <div className="icon-1x1-small w-embed">
-                                    <svg aria-hidden="true" className="h-[17px] w-[16px] text-dark-green" fill="currentColor" role="Image" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+                                        <svg aria-hidden="true" className="h-[17px] w-[16px] text-dark-green" fill="currentColor" role="Image" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
                                             <title>Arrow Right</title>
                                             <polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9">
                                             </polygon>
-                                            </svg>
+                                        </svg>
                                     </div>
                                 </div>
                             </div></a>
@@ -1010,12 +1012,12 @@ export default function Home() {
             <div className="margin-top margin-medium relative mb-12">
                 <div className="button-container center">
                     <a href="/blog" className="button is-icon w-inline-block absolute left-[88%] -top-44 bg-dark-green text-white w-[82px] h-[78px] flex flex-col justify-around p-2 rounded-lg">
-                    <div>Read More
+                        <div>Read More
 
-                    </div>
-                    <div className="icon-1x1-small w-embed">
-                        <Image src="/rightarrow.svg" alt="right arrow" height={17} width={16} className="invert" />
-                    </div>
+                        </div>
+                        <div className="icon-1x1-small w-embed">
+                            <Image src="/rightarrow.svg" alt="right arrow" height={17} width={16} className="invert" />
+                        </div>
                     </a>
                 </div>
             </div>
